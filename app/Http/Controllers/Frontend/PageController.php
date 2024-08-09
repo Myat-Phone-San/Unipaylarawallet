@@ -83,7 +83,7 @@ class PageController extends Controller
         $hash_value = $request->hash_value;
 
         $str = $to_phone . $amount . $description;
-        $hash_value2 = hash_hmac('sha256', $str, 'magicpay123!@#');
+        $hash_value2 = hash_hmac('sha256', $str, 'unipay123!@#');
         if ($hash_value !== $hash_value2) {
             return back()->withErrors(['amount' => 'The given data is invalid.'])->withInput();
         }
@@ -122,7 +122,7 @@ class PageController extends Controller
         $hash_value = $request->hash_value;
 
         $str = $to_phone . $amount . $description;
-        $hash_value2 = hash_hmac('sha256', $str, 'magicpay123!@#');
+        $hash_value2 = hash_hmac('sha256', $str, 'unipay123!@#');
         if ($hash_value !== $hash_value2) {
             return back()->withErrors(['amount' => 'The given data is invalid.'])->withInput();
         }
@@ -286,7 +286,7 @@ class PageController extends Controller
     public function transferHash(Request $request)
     {
         $str = $request->to_phone . $request->amount . $request->description;
-        $hash_value = hash_hmac('sha256', $str, 'magicpay123!@#');
+        $hash_value = hash_hmac('sha256', $str, 'unipay123!@#');
 
         return response()->json([
             'status' => 'success',
@@ -326,7 +326,7 @@ class PageController extends Controller
         $hash_value = $request->hash_value;
 
         $str = $to_phone . $amount . $description;
-        $hash_value2 = hash_hmac('sha256', $str, 'magicpay123!@#');
+        $hash_value2 = hash_hmac('sha256', $str, 'unipay123!@#');
         if ($hash_value !== $hash_value2) {
             return back()->withErrors(['amount' => 'The given data is invalid.'])->withInput();
         }
@@ -365,7 +365,7 @@ class PageController extends Controller
         $hash_value = $request->hash_value;
 
         $str = $to_phone . $amount . $description;
-        $hash_value2 = hash_hmac('sha256', $str, 'magicpay123!@#');
+        $hash_value2 = hash_hmac('sha256', $str, 'unipay123!@#');
         if ($hash_value !== $hash_value2) {
             return back()->withErrors(['amount' => 'The given data is invalid.'])->withInput();
         }

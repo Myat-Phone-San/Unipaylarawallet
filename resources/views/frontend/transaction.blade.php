@@ -4,7 +4,12 @@
 <div class="transaction">
     <div class="card mb-3">
         <div class="card-body p-2">
-            <h6><i class="fas fa-filter"></i> Filter</h6>
+            <h6>
+                <!-- <i class="fas fa-filter"></i>
+                  -->
+
+                  <img src="{{asset('img/filter.png')}}" alt="" style="width: 18px; height:18px;">
+             Filter</h6>
             <div class="row">
                 <div class="col-6">
                     <div class="input-group my-2">

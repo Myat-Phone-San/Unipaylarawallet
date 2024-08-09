@@ -32,7 +32,7 @@ class TransferConfirmValidate extends FormRequest
     public function messages(){
         return [
             'to_phone.required' => 'Please fill the to account information.',
-            'amount.required' => 'Please fil the amount.'
+            'amount.required' => 'Please fill the amount.'
         ];
     }
 }

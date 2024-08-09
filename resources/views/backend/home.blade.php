@@ -6,7 +6,8 @@
     <div class="page-title-wrapper">
         <div class="page-title-heading">
             <div class="page-title-icon">
-                <i class="pe-7s-display2 icon-gradient bg-mean-fruit">
+            <img src="{{asset('img/monitor.png')}}" alt="" style="width:30px;height:30px;">
+                <!-- <i class="pe-7s-display2 icon-gradient bg-mean-fruit"> -->
                 </i>
             </div>
             <div>Dashboard</div>
@@ -15,7 +16,7 @@
 </div>
 
 
-<div class="row">
+                            <div class="row">
                             <div class="col-md-6 col-xl-4">
                                 <div class="card mb-3 widget-content bg-primary">
                                     <div class="widget-content-wrapper text-white justify-content-center">
@@ -58,8 +59,12 @@
                            
                         </div>
                         <div class="container">
-        <h5>Admin & Users Chart</h5>
-        <canvas id="userChart" width="400" height="130"></canvas>
+                        
+        <h4 class="d-flex justify-content-center">Admin & Users Chart</h4>
+        <div class="row">
+        <canvas id="userChart" width="600" height="230" class="col-lg-12 col-md-12 col-sm-12"></canvas>
+        </div>
+        
     </div>
 
                         <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>

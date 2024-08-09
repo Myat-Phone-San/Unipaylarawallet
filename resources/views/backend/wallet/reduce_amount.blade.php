@@ -6,8 +6,9 @@
     <div class="page-title-wrapper">
         <div class="page-title-heading">
             <div class="page-title-icon">
-                <i class="pe-7s-wallet icon-gradient bg-mean-fruit">
-                </i>
+            <img src="{{asset('img/wallet.png')}}" alt="" style="width:30px;height:30px;">
+                <!-- <i class="pe-7s-wallet icon-gradient bg-mean-fruit">
+                </i> -->
             </div>
             <div>Reduce Amount</div>
         </div>
@@ -24,12 +25,14 @@
 
                 <div class="form-group">
                     <label for="">User</label>
-                    <select name="user_id" class="form-control user_id">
+                    <div class="row">
+                    <select name="user_id" class="form-select col-md-12 col-sm-12 user_id">
                         <option value="">-- Please Choose --</option>
                         @foreach ($users as $user)
                         <option value="{{$user->id}}">{{$user->name}} ({{$user->phone}})</option>
                         @endforeach
                     </select>
+                    </div>
                 </div>
 
                 <div class="form-group">

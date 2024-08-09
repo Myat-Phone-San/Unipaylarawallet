@@ -6,8 +6,9 @@
     <div class="page-title-wrapper">
         <div class="page-title-heading">
             <div class="page-title-icon">
-                <i class="pe-7s-users icon-gradient bg-mean-fruit">
-                </i>
+            <img src="{{asset('img/user.png')}}" alt="" style="width:30px;height:30px;">
+                <!-- <i class="pe-7s-users icon-gradient bg-mean-fruit">
+                </i> -->
             </div>
             <div>Users</div>
         </div>
@@ -21,7 +22,10 @@
 <div class="content py-3">
     <div class="card">
         <div class="card-body">
-            <table class="table table-bordered Datatable">
+        <div class="container">
+        <div id="resize_wrapper">
+            
+            <table class="table table-bordered Datatable text-nowrap w-100">
                 <thead>
                     <tr class="bg-light">
                         <th>Name</th>
@@ -38,6 +42,8 @@
                 <tbody></tbody>
             </table>
         </div>
+        </div>
+        </div>
     </div>
 </div>
 @endsection
@@ -46,6 +52,12 @@
 <script>
     $(document).ready(function() {
         var table = $('.Datatable').DataTable({
+            scrollResize: true,
+					scrollX: true,
+					scrollY: 250,
+					scrollCollapse: true,
+// 					paging: false,
+// 					lengthChange: false
             processing: true,
             serverSide: true,
             ajax: "/admin/user/datatable/ssd",

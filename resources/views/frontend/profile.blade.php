@@ -29,12 +29,19 @@
         <div class="card-body pr-0">
             <a href="{{route('update-password')}}" class="d-flex justify-content-between">
                 <span>Update Password</span>
-                <span class="mr-3"><i class="fas fa-angle-right"></i></span>
+                <span class="mr-3">
+                    <!-- <i class="fas fa-angle-right"></i> -->
+                    <img src="{{asset('img/angle-small-right.png')}}" alt="" style="width: 18px; height:18px;">
+                </span>
             </a>
             <hr>
             <a href="#" class="d-flex justify-content-between logout">
                 <span>Logout</span>
-                <span class="mr-3"><i class="fas fa-angle-right"></i></span>
+                <span class="mr-3">
+                    <!-- <i class="fas fa-angle-right"></i>
+                      -->
+                      <img src="{{asset('img/angle-small-right.png')}}" alt="" style="width: 18px; height:18px;">
+                </span>
             </a>
         </div>
     </div>

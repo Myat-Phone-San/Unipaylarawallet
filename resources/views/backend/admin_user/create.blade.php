@@ -6,8 +6,9 @@
     <div class="page-title-wrapper">
         <div class="page-title-heading">
             <div class="page-title-icon">
-                <i class="pe-7s-users icon-gradient bg-mean-fruit">
-                </i>
+            <img src="{{asset('img/admin.png')}}" alt="" style="width:30px;height:30px;">
+                <!-- <i class="pe-7s-users icon-gradient bg-mean-fruit">
+                </i> -->
             </div>
             <div>Create Admin User</div>
         </div>

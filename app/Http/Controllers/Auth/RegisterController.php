@@ -55,7 +55,41 @@ class RegisterController extends Controller
         return Validator::make($data, [
             'name' => ['required', 'string', 'max:255'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
-            'phone' => ['required', 'string', 'unique:users', 'min:9', 'max:11'],
+            // 'phone' => ['required', 'string', 'unique:users', 'min:9', 'max:11'],
+            'phone' => [
+            'required',
+            'string',
+            'unique:users',
+            // Regular expression for Myanmar phone numbers
+            'regex:/^(09|\+?959)' .
+                '(2[0-9]{6}|' .
+                '25[0-9]{7}|' .
+                '26[0-9]{7}|' .
+                '27[0-9]{7}|' .
+                '43[0-9]{6}|' .
+                '4[0-9]{8}|' .
+                '44[0-9]{6}|' .
+                '45[0-9]{6}|' .
+                '5[0-9]{6}|' .
+                '6[0-9]{6}|' .
+                '73[0-9]{6}|' .
+                '91[0-9]{6}|' .
+                '3[0-9]{7}|' .
+                '96[0-9]{7}|' .
+                '97[0-9]{7}|' .
+                '98[0-9]{7}|' .
+                '99[0-9]{7}|' .
+                '76[0-9]{7}|' .
+                '77[0-9]{7}|' .
+                '78[0-9]{7}|' .
+                '79[0-9]{7}|' .
+                '66[0-9]{7}|' .
+                '67[0-9]{7}|' .
+                '68[0-9]{7}|' .
+                '69[0-9]{7}|' .
+                '31[0-9]{7}|' .
+                '32[0-9]{7})$/'
+            ],
             'password' => ['required', 'string', 'min:8', 'max:12', 'confirmed'],
         ]);
     }

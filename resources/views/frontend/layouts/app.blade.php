@@ -16,6 +16,7 @@
 
     {{-- Fontawesome --}}
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    
 
     {{-- Google Font ( Open Sans ) --}}
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -38,7 +39,8 @@
                         <div class="col-2 text-center">
                             @if(!request()->is('/'))
                             <a href="#" class="back-btn">
-                                <i class="fas fa-angle-left"></i>
+                                <!-- <i class="fas fa-angle-left"></i> -->
+                                <img src="{{asset('img/angle-small-left.png')}}" alt="" style="width:25px;height:25px;">
                             </a>
                             @endif
                         </div>
@@ -47,7 +49,9 @@
                         </div>
                         <div class="col-2 text-center">
                             <a href="{{url('notification')}}">
-                                <i class="fas fa-bell"></i> <span class="badge badge-pill badge-danger unread_noti_count">{{$unread_noti_count}}</span>
+                                <!-- <i class="fas fa-bell"></i>  -->
+                                <img src="{{asset('img/alarm.gif')}}" alt="" style="width:40px;height:40px;">
+                                <span class="badge badge-pill badge-danger unread_noti_count">{{$unread_noti_count}}</span>
                             </a>
                         </div>
                     </div>
@@ -66,34 +70,39 @@
         <div class="bottom-menu">
             <a href="{{url('scan-and-pay')}}" class="scan-tab">
                 <div class="inside">
-                    <i class="fas fa-qrcode"></i>
+                    <!-- <i class="fas fa-qrcode"></i> -->
+                    <img src="{{asset('img/qr2.png')}}" alt="" style="width:30px;height:30px;margin-top:2px;">
                 </div>
             </a>
 
             <div class="d-flex justify-content-center">
-                <div class="col-md-8">
+                <div class="col-md-8" >
                     <div class="row">
                         <div class="col-3 text-center">
                             <a href="{{route('home')}}">
-                                <i class="fas fa-home"></i>
+                                <!-- <i class="fas fa-home"></i> -->
+                                <img src="{{asset('img/home.png')}}" alt="" style="width:30px;height:30px;">
                                 <p>Home</p>
                             </a>
                         </div>
                         <div class="col-3 text-center">
                             <a href="{{route('wallet')}}">
-                                <i class="fas fa-wallet"></i>
+                                <!-- <i class="fas fa-wallet"></i> -->
+                                <img src="{{asset('img/wallet2.png')}}" alt="" style="width:30px;height:30px;">
                                 <p>Wallet</p>
                             </a>
                         </div>
                         <div class="col-3 text-center">
                             <a href="{{url('transaction')}}">
-                                <i class="fas fa-exchange-alt"></i>
+                                <!-- <i class="fas fa-exchange-alt"></i> -->
+                                <img src="{{asset('img/transaction2.png')}}" alt="" style="width:30px;height:30px;">
                                 <p>Transaction</p>
                             </a>
                         </div>
                         <div class="col-3 text-center">
                             <a href="{{route('profile')}}">
-                                <i class="fas fa-user"></i>
+                                <!-- <i class="fas fa-user"></i> -->
+                                <img src="{{asset('img/avatar.png')}}" alt="" style="width:30px;height:30px;">
                                 <p>Profile</p>
                             </a>
                         </div>

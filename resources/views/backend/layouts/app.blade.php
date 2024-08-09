@@ -17,6 +17,7 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.css">
     <link rel="stylesheet" href="https://cdn.datatables.net/1.10.23/css/dataTables.bootstrap4.min.css">
+   
 
     <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ttskch/select2-bootstrap4-theme@x.x.x/dist/select2-bootstrap4.min.css">
@@ -42,10 +43,10 @@
                     <div class="app-footer">
                         <div class="app-footer__inner">
                             <div class="app-footer-left">
-                                <span>Copyright {{date('Y')}}. All right reserved by Magic Pay.</span>
+                                <span>Copyright {{date('Y')}}. All right reserved by Unipay.</span>
                             </div>
                             <div class="app-footer-right">
-                                <span>Developed by Htet Lin Thu.</span>
+                                <span>Developed by V-IT (Group-I).</span>
                             </div>
                         </div>
                     </div>
@@ -58,6 +59,7 @@
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <script src="https://cdn.datatables.net/1.10.23/js/jquery.dataTables.min.js"></script>
     <script src="https://cdn.datatables.net/1.10.23/js/dataTables.bootstrap4.min.js"></script>
+   
 
     <!-- Laravel Javascript Validation -->
     <script type="text/javascript" src="{{ url('vendor/jsvalidation/js/jsvalidation.js')}}"></script>

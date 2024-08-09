@@ -90,7 +90,7 @@ class WalletController extends Controller
 
             // To Noti
             $title = 'E-money Received!';
-            $message = 'Your wallet received ' . number_format($request->amount) . ' MMK by Magic Pay Super Admin.';
+            $message = 'Your wallet received ' . number_format($request->amount) . ' MMK by Unipay Super Admin.';
             $sourceable_id = $to_account_transaction->id;
             $sourceable_type = Transaction::class;
             $web_link = url('/transaction/' . $to_account_transaction->trx_id);
@@ -157,7 +157,7 @@ class WalletController extends Controller
 
             // To Noti
             $title = 'E-money Reduced!';
-            $message = 'Your wallet reduced ' . number_format($request->amount) . ' MMK by Magic Pay Super Admin.';
+            $message = 'Your wallet reduced ' . number_format($request->amount) . ' MMK by Unipay Super Admin.';
             $sourceable_id = $to_account_transaction->id;
             $sourceable_type = Transaction::class;
             $web_link = url('/transaction/' . $to_account_transaction->trx_id);

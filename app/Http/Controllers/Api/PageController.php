@@ -97,7 +97,7 @@ class PageController extends Controller
         $hash_value = $request->hash_value;
 
         $str = $to_phone . $amount . $description;
-        $hash_value2 = hash_hmac('sha256', $str, 'magicpay123!@#');
+        $hash_value2 = hash_hmac('sha256', $str, 'unipay123!@#');
         if ($hash_value !== $hash_value2) {
             return fail('The given data is invalid', null);
         }
@@ -154,7 +154,7 @@ class PageController extends Controller
         $hash_value = $request->hash_value;
 
         $str = $to_phone . $amount . $description;
-        $hash_value2 = hash_hmac('sha256', $str, 'magicpay123!@#');
+        $hash_value2 = hash_hmac('sha256', $str, 'unipay123!@#');
         if ($hash_value !== $hash_value2) {
             return fail('The given data is invalid.', null);
         }
@@ -274,7 +274,7 @@ class PageController extends Controller
         $hash_value = $request->hash_value;
 
         $str = $to_phone . $amount . $description;
-        $hash_value2 = hash_hmac('sha256', $str, 'magicpay123!@#');
+        $hash_value2 = hash_hmac('sha256', $str, 'unipay123!@#');
         if ($hash_value !== $hash_value2) {
             return fail('The given data is invalid.', null);
         }
@@ -331,7 +331,7 @@ class PageController extends Controller
         $hash_value = $request->hash_value;
 
         $str = $to_phone . $amount . $description;
-        $hash_value2 = hash_hmac('sha256', $str, 'magicpay123!@#');
+        $hash_value2 = hash_hmac('sha256', $str, 'unipay123!@#');
         if ($hash_value !== $hash_value2) {
             return fail('The given data is invalid.', null);
         }

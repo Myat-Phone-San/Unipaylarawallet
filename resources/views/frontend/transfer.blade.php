@@ -21,7 +21,11 @@
                     <div class="input-group">
                         <input type="text" name="to_phone" class="form-control to_phone" value="{{old('to_phone')}}">
                         <div class="input-group-append">
-                            <span class="input-group-text btn verify-btn"><i class="fas fa-check-circle"></i></span>
+                            <span class="input-group-text btn verify-btn">
+                                <!-- <i class="fas fa-check-circle"></i>
+                                  -->
+                                  <img src="{{asset('img/checked.png')}}" alt="" style="width: 18px; height:18px;">
+                        </span>
                         </div>
                     </div>
                     @error('to_phone')

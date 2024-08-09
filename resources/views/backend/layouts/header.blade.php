@@ -25,7 +25,8 @@
         <span>
             <button type="button" class="btn-icon btn-icon-only btn btn-primary btn-sm mobile-toggle-header-nav">
                 <span class="btn-icon-wrapper">
-                    <i class="fa fa-ellipsis-v fa-w-6"></i>
+                <img src="{{asset('img/menu.png')}}" alt="" style="width:20px;height:20px">
+                    <!-- <i class="fa fa-ellipsis-v fa-w-6"></i> -->
                 </span>
             </button>
         </span>
@@ -41,7 +42,8 @@
                                     <img width="42" class="rounded-circle"
                                         src="https://ui-avatars.com/api/?name={{auth()->guard('admin_user')->user()->name}}"
                                         alt="">
-                                    <i class="fa fa-angle-down ml-2 opacity-8"></i>
+                                        <img src="{{asset('img/down.png')}}" alt="" style="width:20px;height:20px;opacity:8;">
+                                    <!-- <i class="fa fa-angle-down ml-2 opacity-8"></i> -->
                                 </a>
                                 <div tabindex="-1" role="menu" aria-hidden="true"
                                     class="dropdown-menu dropdown-menu-right">

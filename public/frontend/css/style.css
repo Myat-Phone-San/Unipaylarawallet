@@ -119,9 +119,30 @@ a:hover {
     transition: .3s;
 }
 
+.home .home-card{
+    background: #5842E3;
+    color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.09);
+    border: px solid #000000;
+    margin: auto;
+}
+
+.home .home-card p{
+    color:#fff !important;
+   
+}
+
+.home .profile img{
+    border: 3px solid #000000;
+    margin-top:20px;
+}
+
 /* ----------------- Bottom Menu ------------------ */
 .bottom-menu {
-    background: #fff;
+    background: #5842E3;
+    
+
     position: fixed;
     bottom: 0;
     right: 0;
@@ -130,7 +151,7 @@ a:hover {
 
 .bottom-menu a {
     text-decoration: none;
-    color: #333;
+    color: #fff;
     display: block;
 }
 
@@ -139,18 +160,28 @@ a:hover {
     font-size: 18px;
 }
 
+.bottom-menu img {
+    margin-top: 12px;
+    font-size: 18px;
+    color:#fff;
+}
 .bottom-menu p {
     margin-bottom: 12px;
     font-size: 12px;
 }
 
 .bottom-menu a:hover i {
-    color: #5842E3;
+    color: #EDEDF5;
+    transition: .3s;
+}
+
+.bottom-menu a:hover img {
+    color: #EDEDF5;
     transition: .3s;
 }
 
 .bottom-menu a:hover p {
-    color: #5842E3;
+    color: #EDEDF5;
     transition: .3s;
 }
 
@@ -216,6 +247,7 @@ a:hover {
 
 .scan-tab .inside i {
     margin: 0;
+    color:black !important;
 }
 
 @keyframes glow {
@@ -272,7 +304,7 @@ a:hover {
 .shortcut-box img{
     width:25px;
     height:25px;
-    margin-right:8px;
+    margin-right:3px;
 }
 
 .function-box img{

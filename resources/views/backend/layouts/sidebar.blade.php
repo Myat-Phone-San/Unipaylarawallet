@@ -37,26 +37,39 @@
                 <li class="app-sidebar__heading">Dashboards</li>
                 <li>
                     <a href="{{route('admin.home')}}" class="@yield('home-active')">
-                        <i class="metismenu-icon pe-7s-display2"></i>
+                       <div class="flex justify-content-between align-item-center">
+                        <img src="{{asset('img/monitor.png')}}" alt="" style="width:20px;height:20px;position:fixed;left:40px;top:115px;">
+                        <!-- <i class="metismenu-icon pe-7s-display2"></i> -->
                         Dashboard
+                        </div>
                     </a>
+                  
                 </li>
                 <li>
                     <a href="{{route('admin.admin-user.index')}}" class="@yield('admin-user-active')">
-                        <i class="metismenu-icon pe-7s-users"></i>
+                    <div class="flex justify-content-between align-item-center">
+                    <img src="{{asset('img/admin.png')}}" alt="" style="width:25px;height:25px;position:fixed;left:35px;top:150px;">
+                        <!-- <i class="metismenu-icon pe-7s-users"></i> -->
                         Admin Users
+                    </div>
                     </a>
                 </li>
                 <li>
                     <a href="{{route('admin.user.index')}}" class="@yield('user-active')">
-                        <i class="metismenu-icon pe-7s-users"></i>
+                    <div class="flex justify-content-between align-item-center">
+                    <img src="{{asset('img/user.png')}}" alt="" style="width:20px;height:20px;position:fixed;left:40px;top:190px;">
+                        <!-- <i class="metismenu-icon pe-7s-users"></i> -->
                         Users
+                    </div>
                     </a>
                 </li>
                 <li>
                     <a href="{{route('admin.wallet.index')}}" class="@yield('wallet-active')">
-                        <i class="metismenu-icon pe-7s-wallet"></i>
+                    <div class="flex justify-content-between align-item-center">
+                    <img src="{{asset('img/wallet.png')}}" alt="" style="width:20px;height:20px;position:fixed;left:40px;top:230px;">
+                        <!-- <i class="metismenu-icon pe-7s-wallet"></i> -->
                         Wallets
+                    </div>
                     </a>
                 </li>
             </ul>

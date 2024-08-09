@@ -55,8 +55,9 @@ class AdminUserController extends Controller
                 return Carbon::parse($each->updated_at)->format('Y-m-d H:i:s');
             })
             ->addColumn('action', function ($each) {
-                $edit_icon = '<a href="' . route('admin.admin-user.edit', $each->id) . '" class="text-warning"><i class="fas fa-edit"></i></a>';
-                $delete_icon = '<a href="#" class="text-danger delete" data-id="' . $each->id . '"><i class="fas fa-trash-alt"></i></a>';
+                $edit_icon = '<a href="' . route('admin.admin-user.edit', $each->id) . '" class="text-warning"> <img src="' . asset('img/editing.png') . '" alt="" style="width:20px;height:20px;"></a></br></br>';
+                
+                $delete_icon = '<a href="#" class="text-danger delete" data-id="' . $each->id . '"> <img src="' . asset('img/trash.png') . '" alt="" style="width:20px;height:20px;"></a>';
 
                 return '<div class="action-icon">' . $edit_icon . $delete_icon . '</div>';
             })

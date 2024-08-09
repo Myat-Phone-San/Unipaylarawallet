@@ -43,7 +43,7 @@ class AuthController extends Controller
             ]
         );
 
-        $token = $user->createToken('Magic Pay')->accessToken;
+        $token = $user->createToken('Unipay')->accessToken;
 
         return success('Successfully register.', ['token' => $token]);
     }
@@ -75,7 +75,7 @@ class AuthController extends Controller
                 ]
             );
 
-            $token = $user->createToken('Magic Pay')->accessToken;
+            $token = $user->createToken('Unipay')->accessToken;
             return success('Successfully login.', ['token' => $token]);
         }
 
